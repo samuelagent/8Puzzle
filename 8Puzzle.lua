@@ -250,7 +250,7 @@ local function moveTiles(NewState)
 	task.wait(TileTweenInfo.Time)
 end
 
-local function UpdatePuzzleImage(ImageId)
+local function updatePuzzleImage(ImageId)
 	local FormattedId = "rbxassetid://" .. ImageId
 	for _, Image in ipairs(TileImages) do
 		Image.Image = FormattedId
@@ -375,7 +375,7 @@ end
 
 local function imageTextBoxFocusLost(Valid)
 	if Valid ~= false then
-		UpdatePuzzleImage(ImageTextBox.Text)	
+		updatePuzzleImage(ImageTextBox.Text)	
 	end
 end
 
