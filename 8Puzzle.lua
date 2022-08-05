@@ -3,7 +3,7 @@
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 
---// Assets
+--// Assets (Ignore the waitforchild spams, they're unnecessary)
 
 local ScreenGui = script.Parent
 
