@@ -3,47 +3,47 @@
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 
---// Assets (Ignore the waitforchild spams, they're unnecessary)
+--// Assets
 
 local ScreenGui = script.Parent
 
-local Frame = ScreenGui:WaitForChild("Frame")
-local PuzzleFrame = Frame:WaitForChild("PuzzleFrame")
+local Frame = ScreenGui.Frame
+local PuzzleFrame = Frame.PuzzleFrame
 
-local ImageTextBox = Frame:WaitForChild("TextBox")
-local ImageGoButton = Frame:WaitForChild("ImageGo")
+local ImageTextBox = Frame.TextBox
+local ImageGoButton = Frame.ImageGo
 
-local AStarButton = Frame:WaitForChild("AStar")
-local DFSButton = Frame:WaitForChild("DFS")
-local BFSButton = Frame:WaitForChild("BFS")
-local IDSButton = Frame:WaitForChild("IDS")
+local AStarButton = Frame.AStar
+local DFSButton = Frame.DFS
+local BFSButton = Frame.BFS
+local IDSButton = Frame.IDS
 
-local SolveButton = Frame:WaitForChild("Solve")
-local ScrambleButton = Frame:WaitForChild("Scramble")
-local AlgorithmComputeLabel = Frame:WaitForChild("ComputeTime")
+local SolveButton = Frame.Solve
+local ScrambleButton = Frame.Scramble
+local AlgorithmComputeLabel = Frame.ComputeTime
 
 local TileFrames = {
-	PuzzleFrame:WaitForChild("One"),
-	PuzzleFrame:WaitForChild("Two"),
-	PuzzleFrame:WaitForChild("Three"),
-	PuzzleFrame:WaitForChild("Four"),
-	PuzzleFrame:WaitForChild("Five"),
-	PuzzleFrame:WaitForChild("Six"),
-	PuzzleFrame:WaitForChild("Seven"),
-	PuzzleFrame:WaitForChild("Eight"),
-	PuzzleFrame:WaitForChild("Nine")
+	PuzzleFrame.One,
+	PuzzleFrame.Two,
+	PuzzleFrame.Three,
+	PuzzleFrame.Four,
+	PuzzleFrame.Five,
+	PuzzleFrame.Six,
+	PuzzleFrame.Seven,
+	PuzzleFrame.Eight,
+	PuzzleFrame.Nine
 }
 
 local TileImages = {
-	TileFrames[1]:WaitForChild("ImageLabel"),
-	TileFrames[2]:WaitForChild("ImageLabel"),
-	TileFrames[3]:WaitForChild("ImageLabel"),
-	TileFrames[4]:WaitForChild("ImageLabel"),
-	TileFrames[5]:WaitForChild("ImageLabel"),
-	TileFrames[6]:WaitForChild("ImageLabel"),
-	TileFrames[7]:WaitForChild("ImageLabel"),
-	TileFrames[8]:WaitForChild("ImageLabel"),
-	TileFrames[9]:WaitForChild("ImageLabel"),
+	TileFrames[1].ImageLabel,
+	TileFrames[2].ImageLabel,
+	TileFrames[3].ImageLabel,
+	TileFrames[4].ImageLabel,
+	TileFrames[5].ImageLabel,
+	TileFrames[6].ImageLabel,
+	TileFrames[7].ImageLabel,
+	TileFrames[8].ImageLabel,
+	TileFrames[9].ImageLabel,
 }
 
 --// Constants
